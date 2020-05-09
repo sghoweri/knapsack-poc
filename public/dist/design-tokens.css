@@ -1,0 +1,58 @@
+/**
+ * Do not edit directly
+ * Generated on Sat, 02 May 2020 17:31:15 GMT
+ */
+
+:root {
+  --bs-animate-duration-normal: 0.2s;
+  --bs-animate-duration-slow: 0.4s;
+  --bs-animate-timing-linear: linear; /* This is the default browser setting */
+  --bs-animate-timing-ease: ease-in-out;
+  --bs-breakpoint-width-sm: 576px;
+  --bs-breakpoint-width-md: 768px;
+  --bs-breakpoint-width-lg: 992px;
+  --bs-breakpoint-width-xl: 1200px;
+  --bs-breakpoint-media-query-sm: screen and (min-width: 576px);
+  --bs-breakpoint-media-query-md: screen and (min-width: 768px);
+  --bs-breakpoint-media-query-lg: screen and (min-width: 992px);
+  --bs-breakpoint-media-query-xl: screen and (min-width: 1200px);
+  --bs-color-grayscale-white: #ffffff;
+  --bs-color-grayscale-gray-100: #f8f9fa;
+  --bs-color-grayscale-gray-200: #e9ecef;
+  --bs-color-grayscale-gray-300: #dee2e6;
+  --bs-color-grayscale-gray-400: #ced4da;
+  --bs-color-grayscale-gray-500: #adb5bd;
+  --bs-color-grayscale-gray-600: #6c757d;
+  --bs-color-grayscale-gray-700: #495057;
+  --bs-color-grayscale-gray-800: #343a40;
+  --bs-color-grayscale-gray-900: #212529;
+  --bs-color-grayscale-black: #000000;
+  --bs-color-core-blue: #007bff;
+  --bs-color-core-indigo: #6610f2;
+  --bs-color-core-purple: #6f42c1;
+  --bs-color-core-pink: #e83e8c;
+  --bs-color-core-red: #dc3545;
+  --bs-color-core-orange: #fd7e14;
+  --bs-color-core-yellow: #ffc107;
+  --bs-color-core-green: #28a745;
+  --bs-color-core-teal: #20c997;
+  --bs-color-core-cyan: #17a2b8;
+  --bs-color-message-primary: #007bff;
+  --bs-color-message-secondary: #6c757d;
+  --bs-color-message-success: #28a745;
+  --bs-color-message-info: #17a2b8;
+  --bs-color-message-warning: #ffc107;
+  --bs-color-message-danger: #dc3545;
+  --bs-color-message-light: #f8f9fa;
+  --bs-color-message-dark: #343a40;
+  --bs-shadow-button-base: inset 0 1px 0 rgba( 255, 255, 255, .15), 0 1px 1px rgba( 0, 0, 0, .075);
+  --bs-shadow-button-active: inset 0 3px 5px rgba( 0, 0, 0, .125);
+  --bs-shadow-inner: inset 0 1px 2px rgba(34,34,34,25);
+  --bs-shadow-dropdown: 0 .5rem 1rem rgba( 0, 0, 0, .175);
+  --bs-spacing-xs: 4px;
+  --bs-spacing-s: 8px;
+  --bs-spacing-m: 16px;
+  --bs-spacing-l: 32px;
+  --bs-spacing-xl: 48px;
+  --bs-spacing-xxl: 64px;
+}

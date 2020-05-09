@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "pageTop": {
+      "typeof": "function",
+      "tsType": "React.ReactNode",
+      "description": "undefined. Only use: alert"
+    },
+    "hero": {
+      "typeof": "function",
+      "tsType": "React.ReactNode",
+      "description": "undefined. Only use: jumbotron"
+    },
+    "gridItems": {
+      "typeof": "function",
+      "tsType": "React.ReactNode"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "description": "A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site.",
+  "type": "object",
+  "required": [
+    "title"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "default": "Title",
+      "description": "Main heading title in this jumbotron."
+    },
+    "body": {
+      "type": "string",
+      "title": "Body Copy",
+      "description": "This is the body copy that will appear in the jumbotron."
+    },
+    "children": {
+      "typeof": "function",
+      "tsType": "React.ReactNode",
+      "description": "undefined. Only use: card, button"
+    },
+    "subHead": {
+      "typeof": "function",
+      "tsType": "React.ReactNode",
+      "description": "undefined. Only use: button"
+    }
+  }
+}

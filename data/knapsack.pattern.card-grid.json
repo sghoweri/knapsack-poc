@@ -1,0 +1,34 @@
+{
+  "id": "card-grid",
+  "title": "Card Grid",
+  "templates": [
+    {
+      "id": "html",
+      "path": "../assets/patterns/card-grid/card-grid.html",
+      "templateLanguageId": "html",
+      "assetSetIds": [],
+      "demosById": {},
+      "demos": [],
+      "spec": {}
+    }
+  ],
+  "subPages": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "slices": [
+        {
+          "id": "K7cXQBGvWe",
+          "blockId": "markdown-slice",
+          "data": {
+            "md": "## Welcome to the Card Grid Overview!\n\nGet Started by:\n\n- Clicking on me to edit this text!\n- Add more info by clicking \"Add\" below\n- Adjusting the statuses above"
+          }
+        }
+      ]
+    }
+  ],
+  "tabs": [
+    { "type": "subPage", "id": "overview" },
+    { "type": "template", "id": "html" }
+  ]
+}

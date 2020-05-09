@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "size": {
+      "type": "string",
+      "description": "Size of the button.",
+      "default": "md",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "title": "Type",
+      "default": "primary",
+      "enum": [
+        "primary",
+        "secondary",
+        "success",
+        "danger",
+        "warning",
+        "info",
+        "light",
+        "dark",
+        "link"
+      ],
+      "enumNames": [
+        "Primary",
+        "Secondary",
+        "Success",
+        "Danger",
+        "Warning",
+        "Info",
+        "Light",
+        "Dark",
+        "Link"
+      ]
+    },
+    "disabled": {
+      "type": "boolean",
+      "title": "Disabled",
+      "default": false
+    },
+    "outlined": {
+      "type": "boolean",
+      "title": "Outlined",
+      "default": false
+    }
+  }
+}

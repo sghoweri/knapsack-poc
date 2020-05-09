@@ -1,0 +1,358 @@
+{
+  "id": "card",
+  "title": "Card",
+  "description": "Use Bootstrap’s custom card styles as a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.",
+  "demoSize": "l",
+  "demoWidths": [{ "width": 320 }],
+  "templates": [
+    {
+      "title": "Web Component",
+      "id": "web-component",
+      "templateLanguageId": "web-components",
+      "path": "../assets/patterns/card/card.wc.js",
+      "alias": "bs-card",
+      "assetSetIds": ["web-components"],
+      "spec": {
+        "slots": {
+          "default": {
+            "title": "Default",
+            "description": "Bottom of the card",
+            "allowedPatternIds": ["button"]
+          },
+          "body": { "title": "Body" }
+        },
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "description": "A Card for containing content",
+          "type": "object",
+          "title": "Card",
+          "required": ["cardTitle", "cardBody"],
+          "properties": {
+            "cardHeader": { "type": "string", "title": "Card Header Text" },
+            "cardTitle": { "type": "string", "title": "Title" },
+            "cardSubTitle": { "type": "string", "title": "Body Sub Title" },
+            "cardBody": { "type": "string", "title": "Card Body Text" },
+            "textAlign": {
+              "type": "string",
+              "title": "Text Align",
+              "enum": ["left", "center", "right"],
+              "enumNames": ["Left", "Center", "Right"],
+              "default": "left"
+            },
+            "imgSrc": { "type": "string", "title": "Image Source" }
+          }
+        }
+      },
+      "demosById": {
+        "primary": {
+          "id": "primary",
+          "title": "Main",
+          "type": "data",
+          "data": {
+            "slots": {
+              "default": [
+                {
+                  "patternId": "button",
+                  "templateId": "web-component",
+                  "demoId": "main"
+                },
+                {
+                  "patternId": "button",
+                  "templateId": "web-component",
+                  "demoId": "Nayeue1b"
+                }
+              ],
+              "body": ["Some body text"]
+            },
+            "props": {
+              "cardTitle": "Card Title",
+              "cardBody": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+              "textAlign": "left",
+              "imgSrc": "/images/demoImg2.jpg",
+              "imgAlt": "Nature Picture"
+            }
+          }
+        }
+      },
+      "demos": ["primary"]
+    },
+    {
+      "title": "React",
+      "id": "react",
+      "templateLanguageId": "react",
+      "path": "../assets/patterns/card/card.tsx",
+      "assetSetIds": ["bootstrap"],
+      "spec": {
+        "slots": {
+          "children": {
+            "title": "Children",
+            "description": "Bottom of the card",
+            "allowedPatternIds": ["button"]
+          }
+        },
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "type": "object",
+          "title": "Card",
+          "required": [],
+          "properties": {
+            "cardHeader": { "type": "string", "title": "Card Header Text" },
+            "cardTitle": { "type": "string", "title": "Title" },
+            "cardSubTitle": { "type": "string", "title": "Body Sub Title" },
+            "cardBody": { "type": "string", "title": "Card Body Text" },
+            "textAlign": {
+              "type": "string",
+              "title": "Text Align",
+              "enum": ["left", "center", "right"],
+              "enumNames": ["Left", "Center", "Right"],
+              "default": "left"
+            },
+            "imgSrc": { "type": "string", "title": "Image Source" }
+          }
+        }
+      },
+      "demosById": {
+        "primary": {
+          "id": "primary",
+          "title": "Main",
+          "type": "data",
+          "data": {
+            "slots": {
+              "children": [
+                {
+                  "patternId": "button",
+                  "templateId": "react",
+                  "demoId": "secondary"
+                }
+              ]
+            },
+            "props": {
+              "textAlign": "right",
+              "cardTitle": "Hi everyone!",
+              "cardBody": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+              "imgSrc": "/images/demoImg2.jpg",
+              "imgAlt": "Nature Picture"
+            }
+          }
+        },
+        "oJ7Sy5zh": {
+          "id": "oJ7Sy5zh",
+          "title": "Right Align",
+          "type": "data",
+          "data": {
+            "slots": {
+              "children": [
+                {
+                  "patternId": "button",
+                  "templateId": "react",
+                  "demoId": "secondary"
+                }
+              ]
+            },
+            "props": {
+              "textAlign": "right",
+              "cardTitle": "Card Title",
+              "cardBody": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+              "imgSrc": "/images/demoImg1.jpg",
+              "imgAlt": "Nature Picture"
+            }
+          }
+        },
+        "kq6_gva2": {
+          "id": "kq6_gva2",
+          "title": "Text Only",
+          "type": "data",
+          "data": {
+            "slots": {
+              "children": [
+                {
+                  "patternId": "button",
+                  "templateId": "react",
+                  "demoId": "primary"
+                }
+              ]
+            },
+            "props": {
+              "textAlign": "center",
+              "cardTitle": "Card Title",
+              "cardBody": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+              "imgAlt": "Nature Picture"
+            }
+          }
+        },
+        "1Rbqal5n": {
+          "id": "1Rbqal5n",
+          "title": "Confirmation Card",
+          "type": "data",
+          "data": {
+            "slots": {
+              "children": [
+                {
+                  "patternId": "button",
+                  "templateId": "react",
+                  "demoId": "Ib85UZzPs"
+                }
+              ]
+            },
+            "props": {
+              "textAlign": "center",
+              "cardTitle": "Are You Sure??Jj",
+              "imgAlt": "Nature Picture"
+            }
+          }
+        },
+        "guoWqGd1": {
+          "id": "guoWqGd1",
+          "title": "Confirmation Card",
+          "type": "data",
+          "data": {
+            "slots": {
+              "children": [
+                {
+                  "patternId": "button",
+                  "templateId": "react",
+                  "demoId": "primary"
+                }
+              ]
+            },
+            "props": {
+              "textAlign": "center",
+              "cardTitle": "Thanks!",
+              "imgAlt": "Nature Picture"
+            }
+          }
+        }
+      },
+      "demos": ["primary", "1Rbqal5n", "oJ7Sy5zh", "kq6_gva2", "guoWqGd1"],
+      "slices": [
+        {
+          "id": "xJ_Yd852P",
+          "blockId": "markdown-slice",
+          "data": { "md": "# Ima Docs" }
+        }
+      ]
+    },
+    {
+      "title": "Twig",
+      "id": "twig",
+      "templateLanguageId": "twig",
+      "alias": "@components/card.twig",
+      "path": "../assets/patterns/card/card.twig",
+      "assetSetIds": ["bootstrap"],
+      "spec": {
+        "slots": {
+          "children": {
+            "title": "Children",
+            "description": "Bottom of the card",
+            "allowedPatternIds": ["button"]
+          }
+        },
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "description": "A Card for containing content",
+          "type": "object",
+          "title": "Card",
+          "required": ["cardTitle", "cardBody"],
+          "properties": {
+            "cardHeader": { "type": "string", "title": "Card Header Text" },
+            "cardTitle": { "type": "string", "title": "Title" },
+            "cardSubTitle": { "type": "string", "title": "Body Sub Title" },
+            "cardBody": { "type": "string", "title": "Card Body Text" },
+            "textAlign": {
+              "type": "string",
+              "title": "Text Align",
+              "enum": ["left", "center", "right"],
+              "enumNames": ["Left", "Center", "Right"],
+              "default": "left"
+            },
+            "imgSrc": { "type": "string", "title": "Image Source" },
+            "isDark": { "type": "boolean" }
+          }
+        }
+      },
+      "demosById": {
+        "a": {
+          "id": "a",
+          "title": "Main",
+          "type": "data",
+          "data": {
+            "slots": {
+              "footerSlot": [
+                {
+                  "patternId": "button",
+                  "templateId": "twig",
+                  "demoId": "primary"
+                }
+              ],
+              "children": ["Textd"]
+            },
+            "props": {
+              "textAlign": "left",
+              "cardTitle": "The Card Title",
+              "cardBody": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+              "imgSrc": "/images/demoImg2.jpg",
+              "imgAlt": "Nature Picture",
+              "isDark": true
+            }
+          }
+        },
+        "b": {
+          "type": "data",
+          "title": "Stacked",
+          "id": "b",
+          "data": {
+            "props": {
+              "cardHeader": "Card Header",
+              "cardTitle": "Card Title",
+              "cardSubTitle": "Card SubTitle",
+              "cardBody": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+              "list": {
+                "flush": true,
+                "listItems": [
+                  { "itemText": "Cras justo odio", "active": true },
+                  { "itemText": "Dapibus ac facilisis in" },
+                  { "itemText": "Morbi leo risus", "disabled": true },
+                  { "itemText": "Porta ac consectetur ac" },
+                  { "itemText": "Vestibulum at eros" }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "demos": ["a", "b"]
+    },
+    {
+      "id": "html",
+      "path": "../assets/patterns/card/card.html",
+      "templateLanguageId": "html",
+      "assetSetIds": [],
+      "demosById": {},
+      "demos": [],
+      "spec": {}
+    }
+  ],
+  "subPages": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "slices": [
+        {
+          "id": "bV1iHrf_MN",
+          "blockId": "markdown-slice",
+          "data": {
+            "md": "## Welcome to the Card Overview!\n\nGet Started by:\n\n- Clicking on me to edit this text!\n- Add more info by clicking \"Add\" below\n- Adjusting the statuses above"
+          }
+        }
+      ]
+    }
+  ],
+  "tabs": [
+    { "type": "subPage", "id": "overview" },
+    { "type": "template", "id": "twig" },
+    { "type": "template", "id": "react" },
+    { "type": "template", "id": "web-component" },
+    { "type": "template", "id": "html" }
+  ],
+  "statuses": { "react": "needs-updated" }
+}

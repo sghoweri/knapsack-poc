@@ -1,0 +1,150 @@
+{
+  "id": "alert",
+  "title": "Alert",
+  "templates": [
+    {
+      "id": "twig",
+      "path": "../assets/patterns/alert/alert.twig",
+      "alias": "@components/alert.twig",
+      "templateLanguageId": "twig",
+      "assetSetIds": [],
+      "demosById": {
+        "0LAYjwZ6": {
+          "id": "0LAYjwZ6",
+          "title": "My New Demo",
+          "description": "A description",
+          "type": "data",
+          "data": {
+            "props": { "type": "primary", "message": "Testing" },
+            "slots": {}
+          }
+        }
+      },
+      "demos": ["0LAYjwZ6"],
+      "spec": {
+        "slots": {},
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "type": "object",
+          "required": ["message"],
+          "properties": {
+            "message": { "type": "string" },
+            "type": {
+              "type": "string",
+              "enum": [
+                "primary",
+                "secondary",
+                "danger",
+                "warning",
+                "alert",
+                "light",
+                "dark"
+              ],
+              "default": "secondary"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "html",
+      "path": "../assets/patterns/alert/alert.html",
+      "templateLanguageId": "html",
+      "assetSetIds": [],
+      "demosById": {},
+      "demos": [],
+      "spec": {}
+    },
+    {
+      "id": "react",
+      "path": "../assets/patterns/alert/alert.tsx",
+      "templateLanguageId": "react",
+      "assetSetIds": [],
+      "demosById": {
+        "main": {
+          "id": "main",
+          "title": "Main",
+          "type": "data",
+          "data": {
+            "props": { "type": "primary" },
+            "slots": {
+              "message": [
+                "My message Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              ]
+            }
+          }
+        },
+        "uJcuUQAh": {
+          "id": "uJcuUQAh",
+          "title": "With Footer CTA",
+          "type": "data",
+          "data": {
+            "props": { "type": "primary" },
+            "slots": {
+              "message": [
+                "My message Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              ],
+              "footer": [
+                {
+                  "patternId": "button",
+                  "templateId": "react",
+                  "demoId": "primary"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "demos": ["main", "uJcuUQAh"],
+      "spec": {
+        "slots": {
+          "message": { "title": "message" },
+          "footer": { "title": "footer" }
+        },
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "description": "Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.",
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "primary",
+                "secondary",
+                "danger",
+                "warning",
+                "alert",
+                "light",
+                "dark"
+              ],
+              "default": "primary"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "description": "Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.",
+  "subPages": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "slices": [
+        {
+          "id": "_9VJ2qY7e",
+          "blockId": "markdown-slice",
+          "data": {
+            "md": "## Welcome to the Alert Overview!\n\nGet Started by:\n\n- Clicking on me to edit this text!\n- Add more info by clicking \"Add\" below\n- Adjusting the statuses above"
+          }
+        }
+      ]
+    }
+  ],
+  "tabs": [
+    { "type": "subPage", "id": "overview" },
+    { "type": "template", "id": "twig" },
+    { "type": "template", "id": "html" },
+    { "type": "template", "id": "react" }
+  ]
+}

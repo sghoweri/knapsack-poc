@@ -1,0 +1,62 @@
+{
+  "id": "list-group",
+  "title": "List Group",
+  "templates": [
+    {
+      "id": "html",
+      "path": "../assets/patterns/list-group/list-group.html",
+      "templateLanguageId": "html",
+      "assetSetIds": [],
+      "demosById": {},
+      "demos": [],
+      "spec": {}
+    },
+    {
+      "id": "twig",
+      "path": "../assets/patterns/list-group/list-group.twig",
+      "alias": "@components/list-group.twig",
+      "templateLanguageId": "twig",
+      "assetSetIds": [],
+      "demosById": {},
+      "demos": [],
+      "spec": {
+        "slots": {},
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "type": "object",
+          "required": [],
+          "properties": {
+            "flush": {
+              "title": "Flush",
+              "description": "Removes borders",
+              "type": "boolean"
+            },
+            "active": { "title": "Active", "type": "boolean" },
+            "disabled": { "title": "Disabled", "type": "boolean" }
+          }
+        }
+      }
+    }
+  ],
+  "description": "Provide contextual feedback messages for typical user actions with the handful of available and flexible list-group messages.",
+  "subPages": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "slices": [
+        {
+          "id": "KOpfyGk63o",
+          "blockId": "markdown-slice",
+          "data": {
+            "md": "## Welcome to the List Group Overview!\n\nGet Started by:\n\n- Clicking on me to edit this text!\n- Add more info by clicking \"Add\" below\n- Adjusting the statuses above"
+          }
+        }
+      ]
+    }
+  ],
+  "tabs": [
+    { "type": "subPage", "id": "overview" },
+    { "type": "template", "id": "html" },
+    { "type": "template", "id": "twig" }
+  ]
+}

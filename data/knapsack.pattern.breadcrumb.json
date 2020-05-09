@@ -1,0 +1,46 @@
+{
+  "id": "breadcrumb",
+  "title": "Breadcrumb",
+  "templates": [
+    {
+      "id": "html",
+      "path": "../assets/patterns/breadcrumb/breadcrumb.html",
+      "templateLanguageId": "html",
+      "assetSetIds": [],
+      "demosById": {},
+      "demos": [],
+      "spec": {}
+    },
+    {
+      "id": "twig",
+      "path": "../assets/patterns/breadcrumb/breadcrumb.twig",
+      "alias": "@components/breadcrumb.twig",
+      "templateLanguageId": "twig",
+      "assetSetIds": [],
+      "demosById": {},
+      "demos": [],
+      "spec": {}
+    }
+  ],
+  "description": "Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.",
+  "subPages": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "slices": [
+        {
+          "id": "jRLv0SDEtI",
+          "blockId": "markdown-slice",
+          "data": {
+            "md": "## Welcome to the Breadcrumb Overview!\n\nGet Started by:\n\n- Clicking on me to edit this text!\n- Add more info by clicking \"Add\" below\n- Adjusting the statuses above"
+          }
+        }
+      ]
+    }
+  ],
+  "tabs": [
+    { "type": "subPage", "id": "overview" },
+    { "type": "template", "id": "html" },
+    { "type": "template", "id": "twig" }
+  ]
+}

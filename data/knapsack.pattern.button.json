@@ -1,0 +1,349 @@
+{
+  "id": "button",
+  "title": "Button",
+  "description": "Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.",
+  "statuses": {
+    "design": "ready",
+    "react": "ready",
+    "web-components": "ready",
+    "twig": "ready"
+  },
+  "demoSize": "m",
+  "demoWidths": [{ "width": 180 }],
+  "templates": [
+    {
+      "title": "React",
+      "id": "react",
+      "templateLanguageId": "react",
+      "path": "../assets/patterns/button/button.tsx",
+      "assetSetIds": ["bootstrap"],
+      "spec": {
+        "slots": {
+          "children": { "title": "Children" },
+          "icon": { "title": "icon", "allowedPatternIds": ["button"] }
+        },
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "description": "A Button for clicking!",
+          "type": "object",
+          "title": "Button",
+          "required": [],
+          "properties": {
+            "type": {
+              "type": "string",
+              "title": "type",
+              "default": "primary",
+              "enum": [
+                "primary",
+                "secondary",
+                "success",
+                "danger",
+                "warning",
+                "info",
+                "light",
+                "dark",
+                "link"
+              ],
+              "enumNames": [
+                "Primary",
+                "Secondary",
+                "Success",
+                "Danger",
+                "Warning",
+                "Info",
+                "Light",
+                "Dark",
+                "Link"
+              ]
+            },
+            "size": {
+              "type": "string",
+              "title": "Size",
+              "default": "md",
+              "enum": ["sm", "md", "lg"],
+              "enumNames": ["Small", "Default", "Large"]
+            },
+            "disabled": {
+              "type": "boolean",
+              "title": "Disabled",
+              "default": false
+            },
+            "outlined": {
+              "type": "boolean",
+              "title": "Outlined",
+              "default": false
+            },
+            "handleClick": {
+              "description": "This is sick",
+              "typeof": "function",
+              "tsType": "() => void"
+            }
+          }
+        }
+      },
+      "demosById": {
+        "primary": {
+          "id": "primary",
+          "type": "data",
+          "title": "Primary style",
+          "description": "Here is how what to use for the main call to action, try to limit these per page.",
+          "data": {
+            "slots": { "children": ["Text"] },
+            "props": {
+              "type": "primary",
+              "size": "md",
+              "disabled": true,
+              "outlined": false,
+              "handleClick": "() => alert('hi')"
+            }
+          }
+        },
+        "secondary": {
+          "id": "secondary",
+          "type": "data",
+          "title": "Secondary style",
+          "data": {
+            "slots": { "children": ["Hello!"] },
+            "props": {
+              "type": "secondary",
+              "size": "md",
+              "disabled": false,
+              "outlined": false,
+              "handleClick": "() => alert('hi')"
+            }
+          }
+        },
+        "Ib85UZzPs": {
+          "id": "Ib85UZzPs",
+          "title": "Cancel",
+          "description": "A description",
+          "type": "data",
+          "data": {
+            "props": {
+              "type": "danger",
+              "size": "md",
+              "disabled": false,
+              "outlined": false
+            },
+            "slots": { "children": ["Cancel"] }
+          }
+        }
+      },
+      "demos": ["primary", "secondary", "Ib85UZzPs"],
+      "slices": []
+    },
+    {
+      "id": "twig",
+      "templateLanguageId": "twig",
+      "alias": "@components/button.twig",
+      "path": "../assets/patterns/button/button.twig",
+      "assetSetIds": ["bootstrap", "material"],
+      "spec": {
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "type": "object",
+          "title": "Button",
+          "description": "A Button for clicking!",
+          "required": ["text", "url"],
+          "properties": {
+            "text": { "type": "string", "title": "Text" },
+            "url": { "type": "string", "title": "Url" },
+            "style": {
+              "type": "string",
+              "title": "Style",
+              "default": "primary",
+              "enum": [
+                "primary",
+                "secondary",
+                "success",
+                "danger",
+                "warning",
+                "info",
+                "light",
+                "dark",
+                "link"
+              ],
+              "enumNames": [
+                "Primary",
+                "Secondary",
+                "Success",
+                "Danger",
+                "Warning",
+                "Info",
+                "Light",
+                "Dark",
+                "Link"
+              ]
+            },
+            "size": {
+              "type": "string",
+              "title": "Size",
+              "default": "md",
+              "enum": ["sm", "md", "lg"],
+              "enumNames": ["Small", "Default", "Large"]
+            },
+            "disabled": {
+              "type": "boolean",
+              "title": "Disabled",
+              "default": false
+            },
+            "outlined": {
+              "type": "boolean",
+              "title": "Outlined",
+              "default": false
+            }
+          }
+        }
+      },
+      "demosById": {
+        "primary": {
+          "id": "primary",
+          "type": "data",
+          "title": "Primary style",
+          "description": "Here is how what to use for the main call to action, try to limit these per page.",
+          "data": {
+            "props": {
+              "style": "danger",
+              "size": "md",
+              "disabled": false,
+              "outlined": false,
+              "text": "The Button",
+              "url": "#"
+            }
+          }
+        },
+        "secondary": {
+          "id": "secondary",
+          "type": "data",
+          "title": "Secondary style",
+          "data": {
+            "props": { "text": "Button", "url": "#", "style": "secondary" }
+          }
+        }
+      },
+      "demos": ["primary", "secondary"]
+    },
+    {
+      "title": "Web Component",
+      "id": "web-component",
+      "templateLanguageId": "web-components",
+      "path": "../assets/patterns/button/button.wc.js",
+      "alias": "bs-button",
+      "assetSetIds": ["web-components"],
+      "spec": {
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "required": [],
+          "properties": {
+            "size": {
+              "type": "string",
+              "description": "Size of the button.",
+              "default": "md",
+              "enum": ["sm", "md", "lg"]
+            },
+            "type": {
+              "type": "string",
+              "title": "Type",
+              "default": "primary",
+              "enum": [
+                "primary",
+                "secondary",
+                "success",
+                "danger",
+                "warning",
+                "info",
+                "light",
+                "dark",
+                "link"
+              ],
+              "enumNames": [
+                "Primary",
+                "Secondary",
+                "Success",
+                "Danger",
+                "Warning",
+                "Info",
+                "Light",
+                "Dark",
+                "Link"
+              ]
+            },
+            "disabled": {
+              "type": "boolean",
+              "title": "Disabled",
+              "default": false
+            },
+            "outlined": {
+              "type": "boolean",
+              "title": "Outlined",
+              "default": false
+            }
+          }
+        },
+        "slots": { "default": { "title": "Default" } }
+      },
+      "demosById": {
+        "main": {
+          "id": "main",
+          "title": "main",
+          "type": "data",
+          "data": {
+            "props": { "size": "md", "type": "primary" },
+            "slots": { "default": ["Some Button Text"] }
+          }
+        },
+        "Nayeue1b": {
+          "id": "Nayeue1b",
+          "title": "My New Demo",
+          "description": "A description",
+          "type": "data",
+          "data": {
+            "props": { "size": "lg", "type": "success" },
+            "slots": { "default": ["Some text"] }
+          }
+        },
+        "asdf": {
+          "id": "asdf",
+          "title": "A template demo",
+          "type": "template",
+          "templateInfo": {
+            "path": "../assets/patterns/button/button.wc.demo1.html"
+          }
+        }
+      },
+      "demos": ["main", "Nayeue1b", "asdf"]
+    },
+    {
+      "id": "bootstrap-html",
+      "templateLanguageId": "html",
+      "path": "../assets/patterns/button/button.html",
+      "assetSetIds": ["bootstrap"],
+      "demos": [],
+      "spec": {},
+      "title": "HTML"
+    }
+  ],
+  "subPages": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "slices": [
+        {
+          "id": "KClwvOoIxy",
+          "blockId": "markdown-slice",
+          "data": {
+            "md": "## Welcome to the Button Overview!\n\nGet Started by:\n\n- Clicking on me to edit this text!\n- Add more info by clicking \"Add\" below\n- Adjusting the statuses above"
+          }
+        }
+      ]
+    }
+  ],
+  "tabs": [
+    { "type": "subPage", "id": "overview" },
+    { "type": "template", "id": "react" },
+    { "type": "template", "id": "twig" },
+    { "type": "template", "id": "web-component" },
+    { "type": "template", "id": "bootstrap-html" }
+  ]
+}

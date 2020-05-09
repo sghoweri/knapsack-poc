@@ -1,0 +1,120 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "bs-button",
+      "description": "Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.",
+      "references": [
+        {
+          "name": "Knapsack Docs",
+          "url": "http://localhost:3999/pattern/button/web-component"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "size",
+          "values": [
+            {
+              "name": "sm"
+            },
+            {
+              "name": "md"
+            },
+            {
+              "name": "lg"
+            }
+          ],
+          "description": "Size of the button."
+        },
+        {
+          "name": "type",
+          "values": [
+            {
+              "name": "primary"
+            },
+            {
+              "name": "secondary"
+            },
+            {
+              "name": "success"
+            },
+            {
+              "name": "danger"
+            },
+            {
+              "name": "warning"
+            },
+            {
+              "name": "info"
+            },
+            {
+              "name": "light"
+            },
+            {
+              "name": "dark"
+            },
+            {
+              "name": "link"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "disabled",
+          "description": "boolean"
+        },
+        {
+          "name": "outlined",
+          "description": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "bs-card",
+      "description": "Use Bootstrap’s custom card styles as a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.",
+      "references": [
+        {
+          "name": "Knapsack Docs",
+          "url": "http://localhost:3999/pattern/card/web-component"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "cardHeader",
+          "description": ""
+        },
+        {
+          "name": "cardTitle",
+          "description": "(required)"
+        },
+        {
+          "name": "cardSubTitle",
+          "description": ""
+        },
+        {
+          "name": "cardBody",
+          "description": "(required)"
+        },
+        {
+          "name": "textAlign",
+          "values": [
+            {
+              "name": "left"
+            },
+            {
+              "name": "center"
+            },
+            {
+              "name": "right"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "imgSrc",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

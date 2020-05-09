@@ -1,0 +1,45 @@
+{
+  "id": "media-object",
+  "title": "Media Object",
+  "templates": [
+    {
+      "id": "html",
+      "path": "../assets/patterns/media-object/media-object.html",
+      "templateLanguageId": "html",
+      "assetSetIds": [],
+      "demosById": {},
+      "demos": [],
+      "spec": {}
+    },
+    {
+      "id": "twig",
+      "path": "../assets/patterns/media-object/media-object.twig",
+      "alias": "@components/media-object.twig",
+      "templateLanguageId": "twig",
+      "assetSetIds": [],
+      "demosById": {},
+      "demos": [],
+      "spec": {}
+    }
+  ],
+  "subPages": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "slices": [
+        {
+          "id": "kY0bIGo9-q",
+          "blockId": "markdown-slice",
+          "data": {
+            "md": "## Welcome to the Media Object Overview!\n\nGet Started by:\n\n- Clicking on me to edit this text!\n- Add more info by clicking \"Add\" below\n- Adjusting the statuses above"
+          }
+        }
+      ]
+    }
+  ],
+  "tabs": [
+    { "type": "subPage", "id": "overview" },
+    { "type": "template", "id": "html" },
+    { "type": "template", "id": "twig" }
+  ]
+}
